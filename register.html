@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" a href="./Assets/Image/Logo/Zen Dragon.png"/>
+    <title>Register - Dragon Zen Official</title>
+    <link rel="stylesheet" href="./CSS/strukturDasar.css">
+    <link rel="stylesheet" href="./CSS/register.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <h4 class="official">DRAGON ZEN OFFICIAL</h4>
+            <div class="socialMedia">
+                <img src="./Assets/Image/Icon/Berwarna/Instagram.png" alt="Instagram-Icon" class="icon">
+                <img src="./Assets/Image/Icon/Berwarna/Facebook.png" alt="Facebook-Icon" class="icon">
+                <img src="./Assets/Image/Icon/Berwarna/TikTok.png" alt="TikTok-Icon" class="icon">
+                <img src="./Assets/Image/Icon/Berwarna/Youtube.png" alt="Youtube-Icon" class="icon">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="navbar">
+            <ul class="photoProfile">
+                <img src="./Assets/Image/Logo/Hamster Black and White.png" alt="Unlogin Photo Profile">
+            </ul>
+            
+            <ul id="fitur">
+                <li><a href="./index.html" class="title">Beranda</a></li>
+                <li><a href="./karakter.html" class="title">Karakter</a></li>
+                <li><a href="./kelas.html" class="title">Kelas</a></li>
+                <li><a href="./pulau.html" class="title">Pulau</a></li>
+            
+            </ul>
+    
+            <ul class="register" id="reg">
+                <li><a href="./register.html" class="title" id="register">Daftar</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger">
+                <input type="checkbox" id="hamburger-checkbox">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- <img src="./Assets/Image/Background/Home Pages.png" class="background"> -->
+        <div class="mainContent">
+            <div class="box">                
+                <form class="formRegister" method="post" name="form">
+                    <div class="judulRegister">
+                        <h1>DAFTAR</h1>
+                    </div>
+                    <div class="nama">
+                        <div class="namaDepan">
+                            <input type="text" name="namaDepan" class="inputUser" placeholder="Nama Depan..." id="inputNamaDepan">
+                            <div class="errorMSG" id="namaDepanKosong">*Harus diisi</div>
+                            <div class="errorMSG" id="namaDepanSpasi">*Tidak boleh ada spasi</div>
+                        </div>
+
+                        <div class="namaBelakang">
+                            <input type="text" name="namaBelakang" class="inputUser" placeholder="Nama Belakang..." id="inputNamaBelakang">
+                            <div class="errorMSG" id="namaBelakangKosong">*Harus diisi</div>
+                            <div class="errorMSG" id="namaBelakangSpasi">*Tidak boleh ada spasi</div>
+                        </div>
+                    </div>
+
+                    <div class="gender">
+                        <div class="option">
+                            <label for="lakilaki" class="custom-radio">
+                                <input type="radio" name="gender" id="lakilaki" class="radioInput">
+                                <div class="radio-label">Laki - laki</div>
+                            </label>
+
+                            <label for="perempuan" class="custom-radio">
+                                <input type="radio" name="gender" id="perempuan" class="radioInput">
+                                <div class="radio-label">Perempuan</div>
+                            </label>
+                        </div>
+
+                        <div class="errorMSG" id="gender">*Harus diisi</div>
+                    </div>
+
+                    <div class="tanggalLahir">
+                        <input type="date" name="tanggalLahir" class="inputUser" id="tanggalLahir">
+                        <div class="errorMSG" id="tanggalLahirKosong">*Harus diisi</div>
+                    </div>
+
+                    <div class="alamat">
+                        <input type="text" name="alamat" class="inputUser" placeholder="Alamat..." id="alamat">
+                        <div class="errorMSG" id="alamatKosong">*Harus diisi</div>
+                        <div class="errorMSG" id="alamatKurang">*Minimal 10 huruf</div>
+                    </div>
+
+                    <div class="email">
+                        <input type="text" name="email" class="inputUser" placeholder="Email..." id="email">
+                        <div class="errorMSG" id="emailKosong">*Harus diisi</div>
+                        <div class="errorMSG" id="emailFormat">*Harus berakhiran “@dragonzen.com”</div>
+                    </div>
+
+                    <div class="password">
+                        <div class="createPassword">
+                            <input type="password" name="createPassword" class="inputUser" placeholder="Buat Sandi..." id="createPassword">
+                            <div class="errorMSG" id="createPasswordKosong">*Harus diisi</div>
+                        </div>
+
+                        <div class="confirmPassword">
+                            <input type="password" name="confirmPassword" class="inputUser" placeholder="Konfirmasi Sandi..." id="confirmPassword">
+                            <div class="errorMSG" id="confirmPasswordKosong">*Harus diisi</div>
+                            <div class="errorMSG" id="sandiBerbeda">*Kata Sandi Tidak Valid</div>
+                        </div>
+                    </div>
+
+                    <div class="aturan">
+                        <input type="checkbox" name="aturan" class="inputUser" id="aturan"> 
+                        <label for="aturan">Menyetujui setiap aturan dan kebijakan yang ada</label> <br>
+                    </div>
+                    <div class="errorMSG" id="aturanTidakDicentang">*Harus dicentang</div>
+
+                    <div class="submit">
+                        <button class="submitBTN">
+                            <h1>DAFTAR</h1>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="socialMedia" id="sosMed-Footer">
+            <img src="./Assets/Image/Icon/Biru/Blue - Instagram.png" alt="Instagram-Icon" class="icon">
+            <img src="./Assets/Image/Icon/Biru/Blue - Facebook.png" alt="Facebook-Icon" class="icon">
+            <img src="./Assets/Image/Icon/Biru/Blue - TikTok.png" alt="TikTok-Icon" class="icon">
+            <img src="./Assets/Image/Icon/Biru/Blue - Youtube.png" alt="Youtube-Icon" class="icon">
+        </div>
+
+        <div class="copyRight">
+            <h3>HAK CIPTA © 2024 KONTEN  TERSEDIA  DI BAWAH LISENSI OL-MI</h3>
+        </div>
+    </footer>
+
+    <script src="./JavaScript/strukturDasar.js"></script>
+    <script src="./JavaScript/register.js"></script>
+</body>
+</html>

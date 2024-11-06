@@ -1,0 +1,226 @@
+@font-face {
+    font-family: 'Kavoon';
+    src: url(../Assets/Font/Kavoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Passion One';
+    src: url(../Assets/Font/PassionOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Inika';
+    src: url(../Assets/Font/Inika-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Luckiest-Guy';
+    src: url(../Assets/Font/LuckiestGuy-Regular.ttf);
+}
+
+body{
+    background-image: url(../Assets/Image/Background/Home\ Pages.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.box{
+    width: 40%;
+    height: 400px;
+    padding: 25px 25px 0px 25px;
+    margin-top: 35px;
+    background: #ffda45c9;
+    border-radius: 25px;
+    border: 6px solid #D3502F; 
+    overflow-y: scroll; 
+}
+
+.box::-webkit-scrollbar {
+    display: none;
+  }
+
+.judulRegister{
+    font-family: 'Luckiest-Guy' !important;
+    font-weight: 500;
+    text-align: center;
+    color: #D3502F;
+    line-height: normal;
+}
+
+.inputUser{
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 5px solid #DCEDFF;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Kavoon' !important;
+    color: #D3502F;
+    font-weight: 500;
+    padding: 0px 0.8rem;
+    width: calc(100% - 1.6rem);
+}
+
+.aturan {
+    display: flex;
+    align-items: center;
+    margin-top: 13px;
+}
+
+#aturan {
+    margin: 0 10px 0 0; 
+    width: 22px;
+    height: 22px;
+}
+
+.aturan label {
+    font-size: 20px;
+    font-family: 'Inika' !important;
+}
+
+.nama, .password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.errorMSG{
+    margin-left: 12px;
+    font-family: 'Inika' !important;
+    font-weight: 600;
+    font-size: 15px;
+    color: red;
+}
+
+#aturanTidakDicentang{
+    margin-left: 32px;
+}
+
+.option{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0px 5px 0px;
+    background: none;
+    outline: none;
+}
+
+.custom-radio {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    line-height: 24px;
+    background: none; 
+    padding: 5px 0px 0px 0px;
+}
+
+.custom-radio .radioInput {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-label {
+    font-family: 'Kavoon' !important;
+    font-weight: 500;
+    font-size: 20px;
+    color: #D3502F;
+    background: none;
+    margin-left: 60px;
+}
+
+.custom-radio .radioInput ~ .radio-label:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 20px;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #D3502F;
+    border-radius: 50%;
+}
+
+.custom-radio .radioInput:checked ~ .radio-label:before {
+    background-color: #D3502F; 
+    border-color: #D3502F;
+}
+
+.custom-radio .radioInput:checked ~ .radio-label {
+    font-weight:bolder;
+}
+
+.submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.submitBTN {
+    border-radius: 50px;
+    height: 50px;
+    margin: 30px 0;
+    padding: 0px 20px;
+    background: #FD7C95;
+    border: none;
+    color: #FFFFFF;
+    font-size: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.submitBTN h1 {
+    font-family: 'Inknut Antiqua';
+    background: none;
+}
+
+.submitBTN:hover{
+    cursor: pointer;
+    background: #ED1A4B;
+}
+
+@media screen and (max-width: 820px){
+    body{
+        background-image: url(../Assets/Image/Background/Home\ Pages.png);
+        background-repeat: no-repeat;
+        background-size: 120%;
+        background-position-x: center;
+    }
+
+    .box{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 420px){
+    body{
+        background-image: url(../Assets/Image/Background/Home\ Pages.png);
+        background-repeat: no-repeat;
+        background-size: 250%;
+        background-position-x: center;
+    }
+
+    .aturan{
+        align-items: start;
+    }
+    .box{
+        width: 80%;
+        height: 575px;
+    }
+    
+    .nama, .password{
+        flex-direction: column;
+    }
+
+    .option{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,298 @@
+*   {
+    margin: 0px;
+    padding: 0px; 
+    /* background: #99ff00; */
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: calc(100vw - 34px);
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: 'Kavoon';
+    src: url(../Assets/Font/Kavoon-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Luckiest-Guy';
+    src: url(../Assets/Font/LuckiestGuy-Regular.ttf);
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 9999; 
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    background: #B49BE9;
+    padding: 0px 50px;
+    z-index: 9999;
+}
+
+.official{
+    font-family: 'Kavoon' !important;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 18px;
+    background: none;
+}
+
+.socialMedia img {
+    height: 23px;
+    background: none;
+    cursor: pointer;
+}
+
+.socialMedia{
+    width: 125px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+    line-height: 0px;
+}
+
+nav{
+    position: fixed;
+    top: 45px;
+    width: 100%;
+    z-index: 8888;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #F9F0EA;
+    padding: 20px 50px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.photoProfile img{
+    height: 50px;
+    background: none;
+}
+
+#fitur{
+    display: flex;
+    flex-direction: row;
+    background: none;
+    list-style-type: none;
+}
+
+#fitur li{
+    margin: 0px 20px;
+    padding: 13px 35px 13px 35px;
+}
+
+#fitur li a:hover{
+    color: #62147A;
+}
+
+#fitur li a, .register li a{
+    text-decoration: none;
+}
+
+.photoProfile, #fitur li, #fitur li a,.register li, .register li a{
+    background: none;
+    line-height: 0px;
+}
+
+.register{
+    list-style-type: none;
+    background: #0084ff;
+    border-radius: 25px;
+    padding: 25px 35px 25px 35px;
+}
+
+.register:hover{
+    background: #005eff;
+}
+
+.active a{
+    color: #62147A !important;
+    padding-bottom: 5px;
+    border-bottom: 3.5px solid #62147A;
+}
+
+.title{
+    font-family:'Luckiest-Guy' !important;
+    font-weight: 500;
+    font-size: 20px;
+    color: #7f7f7f;
+}
+
+#register{
+    color: #ffff;
+}
+
+.hamburger{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+    background: none;
+}
+
+.hamburger input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger span{
+    display: flex;
+    width: 28px;
+    height: 3px;
+    background: #7f7f7f;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
+.hamburger span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.hamburger span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.hamburger input:checked ~ span:nth-child(2){
+    background: red;
+    transform: rotate(45deg) translate(-1px,-1px);
+}
+
+.hamburger input:checked ~ span:nth-child(3){
+    opacity: 0;
+    transform: scale(0);
+}
+
+.hamburger input:checked ~ span:nth-child(4){
+    background: red;
+    transform: rotate(-45deg);
+}
+
+main{
+    width: 100%;
+}
+
+.mainContent{
+    margin: 162px 30px 75px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;    
+    /* background: gray; */
+}
+
+footer{
+    margin-top: auto;
+    padding: 15px 50px 10px 50px;
+    background: #F9F0EA;
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sosMed-Footer{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.copyRight{
+    border-top: 4px solid #FE9948;
+    padding-top: 5px;
+    width: 43vw;
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.copyRight h3{
+    background: none;
+    font-family: 'Kavoon' !important;
+    font-weight: 500;
+    color: #7041BA;
+    text-align: center;
+}
+
+@media screen and (max-width: 820px){   
+    #fitur{
+       border-radius: 25px;
+       position: absolute;
+       left: 0;
+       top: 106px;
+       height: 40vh;
+       width: 100%;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: space-evenly;
+       background: #d9cfef;
+       z-index: -1;
+       transform: translateY(-200%);
+    }
+
+    #reg{
+        transform: translateY(-1200%); 
+    }
+    .register{
+        position: absolute;
+        top: 55.1vh;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 25px 0px;
+        z-index: -1;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .title{
+        font-family:'Luckiest-Guy' !important;
+        font-weight: 500;
+        font-size: 20px;
+        color: #ffffff;
+    }
+
+    .copyRight{
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .header{
+        padding: 0px 20px;
+    }
+
+    .navbar{
+        padding: 20px 20px;
+    }
+
+    .copyRight{
+        width: 80vw;
+    }
+}

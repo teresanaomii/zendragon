@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Passion One';
+    src: url(../Assets/Font/PassionOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Glacial Indifference';
+    src: url(../Assets/Font/glacial-indifference.regular.otf);
+}
+
+body{
+    background-image: url(../Assets/Image/Background/awan.png);
+    background-repeat: no-repeat;
+    background-size: 1500vw;
+}
+
+.pulauIMG img{
+    border-radius: 25px;
+    width: 100%;
+}
+
+.cerita{
+    width: 90%;
+    margin-top: 25px;
+    border-radius: 25px;
+    font-size: 30px;
+    padding: 60px 70px;
+    background: #ffffff8d;
+}
+
+.cerita p{
+    text-align: justify;
+    font-family: 'Glacial Indifference';
+    padding-bottom: 30px;
+}
+
+.cerita h1{
+    font-family: 'Passion One' !important;
+    font-weight: 500;
+    color: #b05a63;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.karakter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 10px;
+    /* border: 1px red solid; */
+}
+
+.naga{
+    height: 170px;
+}
+
+.nagas{
+    display: flex;
+    flex-direction: row;
+}
+
+#zen{
+    height: 270px;
+    /* border: 1px red solid; */
+}
+
+#nagaCadangan{
+    display: none;
+}
+
+@media screen and (max-width: 820px){
+    .naga{
+        height: 80px;
+    }
+    
+    .cerita{
+        width: 82%;
+    }
+
+    #zen{
+        height: 160px;
+        /* border: 1px red solid; */
+    }
+}
+
+@media screen and (max-width: 420px){
+    .karakter{
+        flex-direction: column;
+    }
+
+    .cerita{
+        font-size: 20px;
+        padding: 30px 40px;
+        background: #ffffff8d;
+        width: 77%;
+    }
+
+    .karakter{
+        align-items: center;
+    }
+
+    #nagaCadangan{
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    #nagaAtas{
+        display: none;
+    }
+
+    #zen{
+        margin-top: 20px;
+        margin-bottom: 50px;
+        /* border: 1px red solid; */
+    }
+}
